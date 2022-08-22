@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        let mycar = new Object();
+        mycar['model'] = "Baleno";
+        mycar['company'] = 'maruti';
+        mycar['year'] = 2019;
+
+        mycar.stereo = new Object();
+        mycar.stereo['name'] = 'player';
+        mycar.stereo['maxvol'] = 30;
+        mycar.stereo['minvol'] = 0;
+
+        // console.log(mycar);
+        // console.log(mycar.model);
+        // console.log(mycar.year);
+        // console.log(mycar.stereo.name);
+        // console.log(mycar['stereo']['maxvol']);
+        
+
+        for (key in mycar) {
+            if (typeof mycar[key] !== 'object')
+                console.log(key + " : " + mycar[key]);
+            else {
+                for (x in mycar[key]) {
+                    console.log(x + " : " + mycar[key][x]);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

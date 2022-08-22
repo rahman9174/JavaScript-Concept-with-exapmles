@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var funId;
+        var num=1;
+        function showDate(){
+            console.log(new Date());
+           
+        }
+        function start() {
+           funId= setTimeout(showDate, 2000);
+        }
+        function stop(){
+            console.log("stoped!!")
+            clearTimeout(funId);
+        }
+    </script>
+</head>
+
+<body>
+    <h3>This is also printed....<br> Hi</h3>
+    <input type="button" onclick="start()" value="start">
+    <input type="button" onclick="stop()" value="stop">
+</body>
+
+</html>

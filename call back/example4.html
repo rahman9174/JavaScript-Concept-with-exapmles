@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // write a High Order function called area() which accepts thhe radius of a circle
+        // as arguments and a callback function which display area . Then from area() calculate
+        // the area and call the callback to display area.
+
+        function area(a,fun){
+            let calculateArea = 3.14*a*a;
+            fun(calculateArea);
+        
+
+        }
+        function display(a){
+            document.write(`<br>The area of a circle is : ${a} and this is came from dispaly function`);
+
+        } 
+        area(10,display);
+        area(20,function(x){
+            document.write(`<br>The area of a circle is : ${x} this is comes from annonymous`);
+        });
+        area(30,(x)=>{
+            document.write(`<br>The area of a circle is : ${x} this is comes from arrow function`);
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

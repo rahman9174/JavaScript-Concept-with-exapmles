@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ["rahman","mirza","piyush","sachin","shivam","aman"];
+        let [r,m,p,s,ss,a] = arr;
+        document.write(`rahman-->${r},<br> mirza-->${m} ,<br> piyush-->${p} <br> and <br>sachin-->${s}`);
+
+        // if we want only our choice element
+        let [first,,,,,last]=arr;
+        document.write(`<br> first-->${first} <br> and <br> last-->${last}`);
+    </script>
+</body>
+</html>

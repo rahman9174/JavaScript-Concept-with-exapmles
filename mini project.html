@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let company = {
+            name : "Apple",
+            FoundatonYear : 1976,
+            productList : [{name:"iPhone",year:2007},{name:"iPad",year:2010}],
+            foundedBy : ["Steve Jobs","Steve Wozniak"],
+            ceo : "Steve Jobs",
+            createNewProduct: function(product){company.productList.push(product)},
+            resign : function(){
+                let ceoResign = company.ceo;
+                company.ceo = null;
+                return ceoResign; 
+            },
+            hireCeo : function (name){
+                company.ceo=name;
+            },
+            toString : function (){
+                let productDetails = "";
+                for(let p of company.productList){
+                    productDetails=productDetails + p.name+" - "+ p.year+",";
+                }
+                return `<strong>Name :</strong>${company.name}<br>
+                        <strong>Foundation year : </strong>${company.year}<br>
+                        <strong>Founders :</strong>${company.foundedBy.join(",")}<br>
+                        <strong>ceo : </strong>${company.ceo}<br>
+                        <strong>Products</strong>${productDetails} <br> `;
+            }
+
+        }
+        document.write("<h3>Company Details</h3>");
+        document.write(company);
+        document.write(`<br><br>CEO : ${company.resign()} Resigned.`)
+
+        document.write("<h3>After ceo's resignation</h3>");
+        document.write(company);
+
+        company.hireCeo("Tim Cook");
+        document.write("<h3>After hiring New ceo</h3>");
+        document.write(company);
+
+        company.createNewProduct({name:"IHome",year:2020});
+        document.write("<h3>After adding New product</h3>");
+        document.write(company);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

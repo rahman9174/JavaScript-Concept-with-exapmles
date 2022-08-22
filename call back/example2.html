@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function multiply(a,b,p){
+            let c = a * b;
+            document.write(`<br>multiplication of ${a} and ${b} is : ${c}`);
+            p(c);
+
+        }
+        // function checkEvenOdd(x){
+        //     if(x%2==0){
+        //         document.write("<br>number is even");
+        //     }
+        //     else{
+        //         document.write("<br> number is odd.....");
+        //     }
+        // }
+        // function square(z){
+        //     document.write(`<br>the square of the producted numbers is : ${z*z}`);
+
+        // }
+        multiply(4,2,function (z){
+            document.write(`<br>the square of the producted numbers is : ${z*z}`);
+
+        });
+
+        multiply(4,2, function(x){
+            if(x%2==0){
+                document.write("<br>number is even");
+            }
+            else{
+                document.write("<br> number is odd.....");
+            }
+        });
+        multiply(10,10,alert);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

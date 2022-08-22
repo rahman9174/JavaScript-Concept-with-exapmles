@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function colorAddd(){
+        let ul = document.querySelector("ul");
+        let newLi = document.createElement("li");
+        let newColor = prompt("enter new color ");
+        let newText = document.createTextNode(newColor);
+        
+        let colPos = prompt("enter existing color name ");
+        let colPos1 = 
+
+        newLi.appendChild(newText);
+        ul.insertBefore(newLi,colPos);
+
+
+        // newPara= newPara.appendChild(newText);
+        // //console.log(newPara);
+        // let fpara = document.getElementById("p3");
+        // div.insertBefore(newPara,fpara);
+        }
+        
+    </script>
+</head>
+<body>
+    
+        <ul>
+            <li>Red</li>
+            <li>Blue</li>
+        </ul>
+    
+    <button onclick="colorAddd()">AddPara</button>
+</body>
+</html>

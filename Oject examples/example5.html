@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let mycar = new Object();
+
+        mycar['name'] = 'baleno';
+        mycar['year'] = 2015;
+        mycar["model"] = "maruti";
+        mycar["reg no"] = 'MP 04 CB 8383';// in property we gave some space
+
+        console.log("My first car details : ");
+        console.log("Name : "+mycar.name);
+        console.log("year : "+mycar['year']);
+        console.log("model :"+mycar.model);
+        console.log("reg numer : "+mycar["reg no"]);
+        console.log("Price : "+mycar.price);// it will give undefined
+
+        mycar['name'] = 'swift';
+        mycar['year'] = 2018;
+        mycar["model"] = "suzuki";
+        mycar["reg no"] = 'MP 04 CB 4623';// in property we gave some space
+
+        console.log("My new car details : ");
+        console.log("Name : "+mycar.name);
+        console.log("year : "+mycar['year']);
+        console.log("model :"+mycar.model);
+        console.log("reg numer : "+mycar["reg no"]);
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

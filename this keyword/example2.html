@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let mycar = new Object();
+        mycar.company = "maruti";
+        mycar.year = 1995;
+        mycar.model = "Baleno";
+        mycar.showAll = function(){
+            document.write(`${this.company}<br>${this.year}<br>${this.model}`);
+        }
+
+        let mycar2 = new Object();
+        mycar2.company = "maruti2";
+        mycar2.year = 1996;
+        mycar2.model = "Baleno2";
+        mycar2.showAll = function(){
+            document.write(`<br><hr>${this.company}<br>${this.year}<br>${this.model}`);
+        }
+        mycar.showAll();// object 1st printed with the help of this keyword
+
+        mycar2.showAll(); // object 2nd printed with the help of this keywod
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watch</title>
+    <script>
+        function digitalWatch(){
+            setInterval(date,1000);
+        }
+        function date(){
+            console.log(new Date());
+            let date= document.getElementById("date");
+            div = new Date().toLocaleTimeString();
+            date.innerHTML = div;
+        }
+    </script>
+</head>
+<body>
+    <b><div id="date"></div></b><br>
+    <button onclick="digitalWatch()"><b>Date</b></button>
+</body>
+</html>

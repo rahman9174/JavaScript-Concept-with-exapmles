@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let mycar1 = new Object();
+
+        mycar1['name'] = 'baleno';
+        mycar1['year'] = 2015;
+        mycar1["model"] = "maruti";
+        mycar1["reg no"] = 'MP 04 CB 8383';// in property we gave some space
+
+        console.log("My first car details : ");
+        console.log("Name : "+mycar1.name);
+        console.log("year : "+mycar1['year']);
+        console.log("model :"+mycar1.model);
+        console.log("reg numer : "+mycar1["reg no"]);
+        console.log("Price : "+mycar1.price);// it will give undefined
+
+        let mycar2 = new Object();
+        mycar2['name'] = 'swift';
+        mycar2['year'] = 2018;
+        mycar2["model"] = "suzuki";
+        mycar2["reg no"] = 'MP 04 CB 4623';// in property we gave some space
+        delete mycar2.year;
+        console.log("My new car details : ");
+        console.log("Name : "+mycar2.name);
+        console.log("year : "+mycar2['year']);//give undefined because we deleted that property
+        console.log("model :"+mycar2.model);
+        console.log("reg numer : "+mycar2["reg no"]);
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

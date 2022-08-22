@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let add = (a,b) =>{
+            return a+b;
+        }
+        document.write(` addition of two numbers with arrow function is <br>  ${add(10,100)}`);
+
+       // if the function contain only one statement and returnn a value  then we can remove the brackets and parenthesis () also
+        let add2 = (x,y) => x+y;
+        document.write(` <br> sum with simple arrow funtion : <br>  ${add2(100,100)}`);
+
+        // if function receive only one peramenter then we can remove the parenthesis also
+
+        let square = n => n*n;
+        document.write(` <br> square of ${10} is : ${square(10)}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeContent(){
+            let one = document.getElementById("one");
+            let three = document.getElementById("three");
+            let two = document.getElementById("two");
+            one.innerHTML="hello div one";
+            three.innerHTML="hi this is three";
+            two.innerHTML = "Hllo i am div 2"
+
+        }
+    </script>
+</head>
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+
+    <input type="button" value="fill the div" onclick="changeContent()" name="" id="">
+</body>
+</html>

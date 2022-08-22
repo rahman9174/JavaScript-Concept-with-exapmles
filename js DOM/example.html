@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addMore(){
+        let courses = prompt("enter new course");
+        let ul = document.querySelector("ul");
+        ul.innerHTML += "<li>"+courses+ "</li>";
+        }
+    </script>
+</head>
+<body>
+    <h2>courses</h2>
+    <ul>
+        <li>Html</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+    </ul>
+    <input type="button" value="Add more courses" onclick="addMore()" name="" id="">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let mycar = new Object();
+        mycar['model'] = "Baleno";
+        mycar['company'] = 'maruti';
+        mycar['year'] = 2019;
+
+        mycar.stereo = new Object();
+        mycar.stereo['name'] = 'player';
+        mycar.stereo['maxvol'] = 30;s
+
+        console.log(mycar);
+        console.log(mycar.model);
+        console.log(mycar.year);
+        console.log(mycar.stereo.name);
+        console.log(mycar['stereo']['maxvol']);
+
+        // for(let x in mycar){
+        //     if(typeof mycar)
+        //     console.log(x+" : "+mycar[x]);
+        // }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
